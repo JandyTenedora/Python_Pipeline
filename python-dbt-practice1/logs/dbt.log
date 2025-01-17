@@ -1,0 +1,184 @@
+[0m16:44:42.902467 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1056c0440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106467b10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106467c50>]}
+
+
+============================== 16:44:42.906185 | 77de7cb7-bb76-4ab4-8c2d-24963f1f24fb ==============================
+[0m16:44:42.906185 [info ] [MainThread]: Running with dbt=1.9.0
+[0m16:44:42.906629 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'fail_fast': 'False', 'profiles_dir': '/Users/jandytenedora/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init dbt_project', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:44:42.918721 [debug] [MainThread]: Starter project path: /Users/jandytenedora/Interview/python-dbt-practice1/dbt-env/lib/python3.13/site-packages/dbt/include/starter_project
+[0m16:44:42.922713 [info ] [MainThread]: 
+Your new dbt project "dbt_project" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m16:44:42.922974 [info ] [MainThread]: Setting up your profile.
+[0m16:45:25.335374 [error] [MainThread]: Encountered an error:
+
+[0m16:45:25.348754 [error] [MainThread]: Traceback (most recent call last):
+  File "/Users/jandytenedora/Interview/python-dbt-practice1/dbt-env/lib/python3.13/site-packages/dbt/cli/requires.py", line 153, in wrapper
+    result, success = func(*args, **kwargs)
+                      ~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/jandytenedora/Interview/python-dbt-practice1/dbt-env/lib/python3.13/site-packages/dbt/cli/requires.py", line 103, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/jandytenedora/Interview/python-dbt-practice1/dbt-env/lib/python3.13/site-packages/dbt/cli/main.py", line 477, in init
+    results = task.run()
+  File "/Users/jandytenedora/Interview/python-dbt-practice1/dbt-env/lib/python3.13/site-packages/dbt/task/init.py", line 346, in run
+    self.setup_profile(profile_name)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/Users/jandytenedora/Interview/python-dbt-practice1/dbt-env/lib/python3.13/site-packages/dbt/task/init.py", line 262, in setup_profile
+    self.create_profile_from_target(adapter, profile_name=profile_name)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jandytenedora/Interview/python-dbt-practice1/dbt-env/lib/python3.13/site-packages/dbt/task/init.py", line 179, in create_profile_from_target
+    self.create_profile_from_profile_template(profile_template, profile_name)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jandytenedora/Interview/python-dbt-practice1/dbt-env/lib/python3.13/site-packages/dbt/task/init.py", line 163, in create_profile_from_profile_template
+    target = self.generate_target_from_input(prompts, initial_target)
+  File "/Users/jandytenedora/Interview/python-dbt-practice1/dbt-env/lib/python3.13/site-packages/dbt/task/init.py", line 129, in generate_target_from_input
+    target[key] = click.prompt(
+                  ~~~~~~~~~~~~^
+        text, default=default, hide_input=hide_input, type=type
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/jandytenedora/Interview/python-dbt-practice1/dbt-env/lib/python3.13/site-packages/click/termui.py", line 164, in prompt
+    value = prompt_func(prompt)
+  File "/Users/jandytenedora/Interview/python-dbt-practice1/dbt-env/lib/python3.13/site-packages/click/termui.py", line 147, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m16:45:25.355140 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": false, "command_wall_clock_time": 42.502003, "process_in_blocks": "0", "process_kernel_time": 0.281043, "process_mem_max_rss": "191053824", "process_out_blocks": "0", "process_user_time": 1.284952}
+[0m16:45:25.356486 [debug] [MainThread]: Command `dbt init` failed at 16:45:25.356303 after 42.50 seconds
+[0m16:45:25.357462 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x130a99810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x130acc4d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x130a06580>]}
+[0m16:45:25.358325 [debug] [MainThread]: Flushing usage events
+[0m16:45:25.703392 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:45:57.332701 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1069c8440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110533b10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110533c50>]}
+
+
+============================== 16:45:57.336354 | bcb37cd3-f3fb-47ef-9b95-bb1d28b309bf ==============================
+[0m16:45:57.336354 [info ] [MainThread]: Running with dbt=1.9.0
+[0m16:45:57.336740 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/jandytenedora/.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init dbt_project', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:45:57.349255 [info ] [MainThread]: A project called dbt_project already exists here.
+[0m16:45:57.351143 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 0.06534271, "process_in_blocks": "0", "process_kernel_time": 0.128935, "process_mem_max_rss": "96419840", "process_out_blocks": "0", "process_user_time": 0.741562}
+[0m16:45:57.351491 [debug] [MainThread]: Command `dbt init` succeeded at 16:45:57.351418 after 0.07 seconds
+[0m16:45:57.351743 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1105523f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1105d9d90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1103a6be0>]}
+[0m16:45:57.351997 [debug] [MainThread]: Flushing usage events
+[0m16:45:57.676811 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:46:04.965975 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1055c8440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106833b10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106833c50>]}
+
+
+============================== 16:46:04.969336 | d0223717-838f-4bb7-aafc-2d239baef6d9 ==============================
+[0m16:46:04.969336 [info ] [MainThread]: Running with dbt=1.9.0
+[0m16:46:04.969746 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'fail_fast': 'False', 'profiles_dir': '/Users/jandytenedora/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt init dbt_project', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m16:46:04.980351 [debug] [MainThread]: Starter project path: /Users/jandytenedora/Interview/python-dbt-practice1/dbt-env/lib/python3.13/site-packages/dbt/include/starter_project
+[0m16:46:04.984898 [info ] [MainThread]: 
+Your new dbt project "dbt_project" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m16:46:04.985186 [info ] [MainThread]: Setting up your profile.
+[0m16:47:49.273665 [info ] [MainThread]: Profile dbt_project written to /Users/jandytenedora/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m16:47:49.283137 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 104.358406, "process_in_blocks": "0", "process_kernel_time": 0.258799, "process_mem_max_rss": "190218240", "process_out_blocks": "0", "process_user_time": 1.128159}
+[0m16:47:49.284283 [debug] [MainThread]: Command `dbt init` succeeded at 16:47:49.283979 after 104.36 seconds
+[0m16:47:49.285844 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1168ddba0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106750710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1168f9e10>]}
+[0m16:47:49.286486 [debug] [MainThread]: Flushing usage events
+[0m16:47:49.642796 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:47:57.664350 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107d78440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111033b10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111033c50>]}
+
+
+============================== 16:47:57.667797 | 360021dd-e3bc-455a-8402-8711a4463db3 ==============================
+[0m16:47:57.667797 [info ] [MainThread]: Running with dbt=1.9.0
+[0m16:47:57.668204 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/jandytenedora/.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m16:47:57.680038 [info ] [MainThread]: dbt version: 1.9.0
+[0m16:47:57.680318 [info ] [MainThread]: python version: 3.13.1
+[0m16:47:57.680508 [info ] [MainThread]: python path: /Users/jandytenedora/Interview/python-dbt-practice1/dbt-env/bin/python3.13
+[0m16:47:57.680685 [info ] [MainThread]: os info: macOS-14.7.1-arm64-arm-64bit-Mach-O
+[0m16:47:58.283134 [info ] [MainThread]: Using profiles dir at /Users/jandytenedora/.dbt
+[0m16:47:58.283468 [info ] [MainThread]: Using profiles.yml file at /Users/jandytenedora/.dbt/profiles.yml
+[0m16:47:58.283677 [info ] [MainThread]: Using dbt_project.yml file at /Users/jandytenedora/Interview/python-dbt-practice1/dbt_project.yml
+[0m16:47:58.284006 [info ] [MainThread]: adapter type: bigquery
+[0m16:47:58.284204 [info ] [MainThread]: adapter version: 1.9.1
+[0m16:47:58.284392 [info ] [MainThread]: Configuration:
+[0m16:47:58.284551 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m16:47:58.284706 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m16:47:58.284855 [info ] [MainThread]: Required dependencies:
+[0m16:47:58.285059 [debug] [MainThread]: Executing "git --help"
+[0m16:47:58.312763 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m16:47:58.313496 [debug] [MainThread]: STDERR: "b''"
+[0m16:47:58.313740 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m16:47:58.313978 [info ] [MainThread]: Connection:
+[0m16:47:58.314198 [info ] [MainThread]:   method: oauth
+[0m16:47:58.314372 [info ] [MainThread]:   database: terraform-tutorial-430708
+[0m16:47:58.314528 [info ] [MainThread]:   execution_project: terraform-tutorial-430708
+[0m16:47:58.314679 [info ] [MainThread]:   schema: dbt_tutorial
+[0m16:47:58.314825 [info ] [MainThread]:   location: EU
+[0m16:47:58.315120 [info ] [MainThread]:   priority: interactive
+[0m16:47:58.315336 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m16:47:58.315509 [info ] [MainThread]:   impersonate_service_account: None
+[0m16:47:58.315664 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m16:47:58.315840 [info ] [MainThread]:   job_retries: 1
+[0m16:47:58.315991 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m16:47:58.316141 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m16:47:58.316282 [info ] [MainThread]:   timeout_seconds: 300
+[0m16:47:58.316428 [info ] [MainThread]:   client_id: None
+[0m16:47:58.316571 [info ] [MainThread]:   token_uri: None
+[0m16:47:58.316711 [info ] [MainThread]:   dataproc_region: None
+[0m16:47:58.316850 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m16:47:58.316989 [info ] [MainThread]:   gcs_bucket: None
+[0m16:47:58.317126 [info ] [MainThread]:   dataproc_batch: None
+[0m16:47:58.317692 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m16:47:58.425387 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m16:47:58.425875 [debug] [MainThread]: On debug: select 1 as id
+[0m16:47:58.426122 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:48:07.242689 [debug] [MainThread]: BigQuery adapter: Got an error when attempting to create a bigquery " "client: 'Runtime Error
+  Failed to authenticate with supplied credentials
+  error:
+  Your default credentials were not found. To set up Application Default Credentials, see https://cloud.google.com/docs/authentication/external/set-up-adc for more information.'
+[0m16:48:07.243498 [debug] [MainThread]: BigQuery adapter: Unhandled error while running:
+select 1 as id
+[0m16:48:07.243731 [debug] [MainThread]: BigQuery adapter: Database Error
+  Runtime Error
+    Failed to authenticate with supplied credentials
+    error:
+    Your default credentials were not found. To set up Application Default Credentials, see https://cloud.google.com/docs/authentication/external/set-up-adc for more information.
+[0m16:48:07.244014 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m16:48:07.244313 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m16:48:07.244509 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </Users/jandytenedora/Interview/python-dbt-practice1/dbt_project.yml> not found
+
+[0m16:48:07.244689 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >'NoneType' object has no attribute 'close'
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m16:48:07.246703 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 9.626937, "process_in_blocks": "0", "process_kernel_time": 0.252471, "process_mem_max_rss": "193347584", "process_out_blocks": "0", "process_user_time": 1.20257}
+[0m16:48:07.247200 [debug] [MainThread]: Command `dbt debug` failed at 16:48:07.247111 after 9.63 seconds
+[0m16:48:07.247571 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1203ab360>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1203db770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x120307350>]}
+[0m16:48:07.247897 [debug] [MainThread]: Flushing usage events
+[0m16:48:07.567727 [debug] [MainThread]: An error was encountered while trying to flush usage events
