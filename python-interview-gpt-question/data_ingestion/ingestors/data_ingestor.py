@@ -22,7 +22,6 @@ class DataIngestor(ABC):
         :return: None
         """
         self.validate_data()
-        self.parse_data()
         parsed_data = self.parse_data()
 
         self.log_progress()

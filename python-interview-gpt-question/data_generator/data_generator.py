@@ -81,8 +81,8 @@ def main():
     customer_logs = generate_customer_logs(m)
     event_logs = generate_logs(o)
 
-    dir_path = os.path.dirname(os.path.realpath(__file__))
-    target_dir = f"{dir_path}/target"
+    dir_path = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
+    target_dir = f"{dir_path}/target/raw"
     # Save to files
     sales_file = "large_sales_data.csv"
     logs_file = "large_customer_activity_logs.json"
