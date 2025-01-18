@@ -1,6 +1,6 @@
 import csv
 
-from data_ingestion.data_ingestor import DataIngestor
+from data_ingestion.ingestors.data_ingestor import DataIngestor
 
 
 class CSVDataIngestor(DataIngestor):
@@ -21,7 +21,7 @@ class CSVDataIngestor(DataIngestor):
             for row in reader:
                 if 'transaction_id' not in row:
                     raise ValueError("Missing transaction_id column in CSV")
-            print("cSV data validated successfully")
+            print("CSV data validated successfully")
 
     def parse_data(self) -> list:
         """
@@ -39,12 +39,4 @@ class CSVDataIngestor(DataIngestor):
         return parsed_data
 
 
-
-    def ingest_data(self):
-        """
-        Ingest 
-        :return:
-        """
-        print("")
-        pass
 

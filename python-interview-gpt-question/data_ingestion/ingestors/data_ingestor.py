@@ -13,10 +13,19 @@ class DataIngestor(ABC):
     def validate_data(self):
         pass
 
-    @abstractmethod
-    def ingest_data(self):
-        pass
-
-    @abstractmethod
     def log_progress(self):
-        print(f"Ingesting data from {self.data_source} to {self.destination}")
+        print(f"Ingesting {self.file_type} data from {self.data_source} to {self.destination}")
+
+    def ingest_data(self) -> None:
+        """
+        Ingest data into destination
+        :return: None
+        """
+        self.validate_data()
+        self.parse_data()
+        parsed_data = self.parse_data()
+
+        self.log_progress()
+        self.destination.write_data(parsed_data)
+
+
