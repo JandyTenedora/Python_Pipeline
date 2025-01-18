@@ -9,7 +9,7 @@ def main():
    ## Possible new pattern to ingest without the need of io write
    # normalised_customer_activity, product_lookup = normalise_customer_activity()
 
-   dataset_id = "dataset_id"
+   dataset_id = "ecommerce_data"
    bq_sales_data = BigQueryDestination(dataset_id, "sales_data")
    bq_event_logs = BigQueryDestination(dataset_id, "event_logs")
    bq_customer_activity = BigQueryDestination(dataset_id, "customer_activity")

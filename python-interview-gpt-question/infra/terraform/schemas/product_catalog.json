@@ -1,0 +1,20 @@
+[
+  {
+    "name": "product_id",
+    "type": "INTEGER",
+    "mode": "REQUIRED",
+    "description": "The unique identifier of the product."
+  },
+  {
+    "name": "category",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "The category of the product (e.g., 'furniture')."
+  },
+  {
+    "name": "device",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "The type of device associated with the product (e.g., 'mobile', 'tablet')."
+  }
+]

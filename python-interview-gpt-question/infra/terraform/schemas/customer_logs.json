@@ -1,0 +1,26 @@
+[
+  {
+    "name": "timestamp",
+    "type": "TIMESTAMP",
+    "mode": "REQUIRED",
+    "description": "The timestamp of the event."
+  },
+  {
+    "name": "user_id",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "The identifier of the user performing the event."
+  },
+  {
+    "name": "event_type",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "The type of event (e.g., 'view', 'click', 'purchase')."
+  },
+  {
+    "name": "product_id",
+    "type": "INTEGER",
+    "mode": "REQUIRED",
+    "description": "The identifier of the product involved in the event."
+  }
+]

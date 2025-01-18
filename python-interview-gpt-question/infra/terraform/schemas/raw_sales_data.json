@@ -1,0 +1,32 @@
+[
+  {
+    "name": "transaction_id",
+    "type": "INTEGER",
+    "mode": "REQUIRED",
+    "description": "The unique identifier for the transaction."
+  },
+  {
+    "name": "product_id",
+    "type": "INTEGER",
+    "mode": "REQUIRED",
+    "description": "The unique identifier for the product involved in the transaction."
+  },
+  {
+    "name": "sale_date",
+    "type": "DATE",
+    "mode": "REQUIRED",
+    "description": "The date of the sale."
+  },
+  {
+    "name": "quantity",
+    "type": "INTEGER",
+    "mode": "REQUIRED",
+    "description": "The number of units sold in the transaction."
+  },
+  {
+    "name": "price_per_unit",
+    "type": "FLOAT",
+    "mode": "REQUIRED",
+    "description": "The price per unit for the product in the transaction."
+  }
+]
