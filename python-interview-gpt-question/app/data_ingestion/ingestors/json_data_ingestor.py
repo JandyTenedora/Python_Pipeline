@@ -1,6 +1,6 @@
 import json
 
-from data_ingestion.ingestors.data_ingestor import DataIngestor
+from app.data_ingestion.ingestors.data_ingestor import DataIngestor
 
 class JSONIngestor(DataIngestor):
     def __init__(self, data_source, destination):

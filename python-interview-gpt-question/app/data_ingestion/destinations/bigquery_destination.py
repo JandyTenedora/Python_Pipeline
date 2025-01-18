@@ -1,7 +1,7 @@
 from google.cloud import bigquery
 from typing import List
 
-from data_ingestion.destinations.destination import Destination
+from app.data_ingestion.destinations.destination import Destination
 
 
 class BigQueryDestination(Destination):

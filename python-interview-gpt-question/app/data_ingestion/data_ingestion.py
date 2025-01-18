@@ -1,9 +1,9 @@
-from data_ingestion.destinations.bigquery_destination import BigQueryDestination
-from data_ingestion.ingestors.csv_data_ingestor import CSVDataIngestor
-from data_ingestion.ingestors.json_data_ingestor import JSONIngestor
-from data_ingestion.normalisers.customer_acitivity_log_normaliser import *
+from app.data_ingestion.data_ingestion import CSVDataIngestor
+from app.data_ingestion.data_ingestion import JSONIngestor
+from app.data_ingestion.data_ingestion import *
+from app.utils.find_project_root import find_project_root
 
-project_root = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
+project_root = str(find_project_root())
 
 def main():
    ## Possible new pattern to ingest without the need of io write

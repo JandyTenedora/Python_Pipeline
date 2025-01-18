@@ -2,7 +2,9 @@ import pandas as pd
 import random
 import json
 from datetime import datetime, timedelta
-import os
+
+from app.utils.find_project_root import find_project_root
+
 
 def generate_sales_data(rows):
     """Generate sales data with the specified number of rows."""
@@ -81,7 +83,7 @@ def main():
     customer_logs = generate_customer_logs(m)
     event_logs = generate_logs(o)
 
-    dir_path = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
+    dir_path = str(find_project_root())
     target_dir = f"{dir_path}/target/raw"
     # Save to files
     sales_file = "large_sales_data.csv"

@@ -1,6 +1,6 @@
 import csv
 
-from data_ingestion.ingestors.data_ingestor import DataIngestor
+from app.data_ingestion.ingestors.data_ingestor import DataIngestor
 
 
 class CSVDataIngestor(DataIngestor):
