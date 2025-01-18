@@ -52,12 +52,12 @@ def main():
     logs_file = "large_customer_activity_logs.json"
 
     # Save sales data as CSV
-    sales_data.to_csv(f"target/${sales_file}", index=False)
+    sales_data.to_csv(f"target/{sales_file}", index=False)
     print(f"Sales data saved to {sales_file}")
 
     # Save customer logs as JSON
-    with open(logs_file, "w") as json_file:
-        json.dump(customer_logs, f"target/${json_file}", indent=4)
+    with open(f"target/{logs_file}", "w") as json_file:
+        json.dump(customer_logs, json_file, indent=4)
     print(f"Customer activity logs saved to {logs_file}")
 
 if __name__ == "__main__":
