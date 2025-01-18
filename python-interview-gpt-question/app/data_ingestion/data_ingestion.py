@@ -1,6 +1,6 @@
-from app.data_ingestion.data_ingestion import CSVDataIngestor
-from app.data_ingestion.data_ingestion import JSONIngestor
-from app.data_ingestion.data_ingestion import *
+from app.data_ingestion.destinations.bigquery_destination import BigQueryDestination
+from app.data_ingestion.ingestors import CSVDataIngestor, JSONIngestor
+from app.data_ingestion.normalisers.customer_acitivity_log_normaliser import normalise_customer_activity_write
 from app.utils.find_project_root import find_project_root
 
 project_root = str(find_project_root())
