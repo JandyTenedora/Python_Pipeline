@@ -1,7 +1,7 @@
 module "bigquery" {
   source = "./modules/bigquery"
   project_id = "terraform-tutorial-430708"
-  dataset_id = "ecommerce_data"
+  dataset_id = "ecommerce_data_raw"
   location = "EU"
   description = "data for ecommerce platform"
 

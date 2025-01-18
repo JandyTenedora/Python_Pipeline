@@ -1,14 +1,15 @@
 import json
-import os
 
-project_root = os.path.dirname(os.path.dirname(os.path.dirname(os.path.realpath(__file__))))
+from app.utils.find_project_root import find_project_root
+
+project_root = find_project_root()
 
 def normalise_customer_activity() -> (list[dict], list[dict]):
     with open(f"{project_root}/target/raw/large_customer_activity_logs.json", "r") as file:
         print("Loading json data...\n")
         data = json.load(file)
         normalized_customer_logs = []
-        product_dict = {}
+        product_json = []
         for d in data:
             normalized_customer_log = {
                 "timestamp": d["timestamp"],
@@ -17,14 +18,12 @@ def normalise_customer_activity() -> (list[dict], list[dict]):
                 "product_id": d["metadata"]["product_id"]
             }
             product = {
-                str(d["metadata"]["product_id"]): {
-                    "category": d["metadata"]["category"],
-                    "device": d["metadata"]["device"]
-                }
+                "product_id": d["metadata"]["product_id"],
+                "category": d["metadata"]["category"],
+                "device": d["metadata"]["device"]
             }
             normalized_customer_logs.append(normalized_customer_log)
-            product_dict = product_dict | product
-        product_json = [product_dict]
+            product_json.append(product)
 
         return normalized_customer_logs, product_json
 

@@ -1,5 +1,6 @@
 from google.cloud import bigquery
 from typing import List
+import pandas as pd
 
 from app.data_ingestion.destinations.destination import Destination
 
@@ -27,10 +28,11 @@ class BigQueryDestination(Destination):
         table_ref = self.client.dataset(self.dataset_id).table(self.table_id)
         table = self.client.get_table(table_ref)
 
+        df = pd.DataFrame(data)
         # Insert the data into BigQuery
-        errors = self.client.insert_rows_json(table, data)
+        errors = self.client.insert_rows_from_dataframe(table, df)
 
-        if errors:
-            print(f"Encountered errors while inserting rows: {errors}")
-        else:
+        if all(not error for error in errors):
             print(f"Successfully inserted {len(data)} rows into {self.table_id}.")
+        else:
+            print(f"Encountered errors while inserting rows: {errors}")
