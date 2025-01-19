@@ -1,6 +1,7 @@
 import sys
 
 from app.data_ingestion.destinations.bigquery_destination import BigQueryDestination
+from app.data_ingestion.destinations.firestore_destination import FirestoreDestination
 from app.data_ingestion.ingestors.csv_data_ingestor import CSVDataIngestor
 from app.data_ingestion.ingestors.json_data_ingestor import JSONIngestor
 from app.data_ingestion.normalisers.customer_acitivity_log_normaliser import normalise_customer_activity_write
@@ -14,8 +15,9 @@ def main():
    # normalised_customer_activity, product_lookup = normalise_customer_activity()
 
    dataset_id = "ecommerce_data_raw"
+   firestore_dataset_name = "ecommerce-firestore"
    bq_sales_data = BigQueryDestination(dataset_id, "raw_sales_data")
-   bq_event_logs = BigQueryDestination(dataset_id, "event_log")
+   bq_event_logs = FirestoreDestination(firestore_dataset_name, "event_log_raw")
    bq_customer_activity = BigQueryDestination(dataset_id, "customer_logs")
    bq_products = BigQueryDestination(dataset_id, "product_catalog")
 

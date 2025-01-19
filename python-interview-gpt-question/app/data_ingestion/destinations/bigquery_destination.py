@@ -32,8 +32,6 @@ class BigQueryDestination(Destination):
         # Ensure the data types match the BigQuery schema
         schema = self.client.get_table(table_ref).schema
         for field in schema:
-            print(field)
-            print(field.field_type)
             if field.field_type == "INTEGER":
                 df[field.name] = df[field.name].astype("int64")
             elif field.field_type == "FLOAT":

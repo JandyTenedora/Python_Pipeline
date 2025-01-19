@@ -1,8 +1,8 @@
 module "bigquery" {
-  source = "./modules/bigquery"
-  project_id = "terraform-tutorial-430708"
-  dataset_id = "ecommerce_data_raw"
-  location = "EU"
+  source      = "./modules/bigquery"
+  project_id  = "terraform-tutorial-430708"
+  dataset_id  = "ecommerce_data_raw"
+  location    = "EU"
   description = "data for ecommerce platform"
 
   labels = {
@@ -10,7 +10,7 @@ module "bigquery" {
   }
 
   tables = {
-      raw_sales_data = {
+    raw_sales_data = {
       schema      = file("schemas/raw_sales_data.json")
       description = "Raw sales data from ingestion."
     }
@@ -22,9 +22,12 @@ module "bigquery" {
       schema      = file("schemas/product_catalog.json")
       description = "Product catalog details."
     }
-    event_log = {
-      schema = file("schemas/event_logs.json")
-      description = "Event logs"
-    }
   }
+}
+
+module "firestore" {
+  source        = "./modules/firestore"
+  project_id    = "terraform-tutorial-430708"
+  database_name = "ecommerce-firestore"
+  location_id   = "europe-west2"
 }
