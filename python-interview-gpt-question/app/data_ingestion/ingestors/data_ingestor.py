@@ -26,5 +26,3 @@ class DataIngestor(ABC):
 
         self.log_progress()
         self.destination.write_data(parsed_data)
-
-
