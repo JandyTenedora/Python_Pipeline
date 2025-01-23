@@ -19,7 +19,7 @@ def main():
    bq_sales_data = BigQueryDestination(dataset_id, "raw_sales_data")
    bq_event_logs = FirestoreDestination(firestore_dataset_name, "event_log_raw")
    bq_customer_activity = BigQueryDestination(dataset_id, "customer_logs")
-   bq_products = BigQueryDestination(dataset_id, "product_catalog")
+   bq_products = FirestoreDestination(firestore_dataset_name, "product_catalog")
 
    normalise_customer_activity_write()
    sales_csv_ingestor = CSVDataIngestor(f"{project_root}/target/raw/large_sales_data.csv", bq_sales_data)
