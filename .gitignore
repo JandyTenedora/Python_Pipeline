@@ -1,1 +1,4 @@
 *.idea/
+
+python-log-processing/app/log_processing/input
+python-log-processing/app/log_processing/output
