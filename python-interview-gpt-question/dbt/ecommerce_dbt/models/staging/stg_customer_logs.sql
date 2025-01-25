@@ -4,7 +4,7 @@ WITH cleaned_customer_logs AS (
         user_id,
         event_type,
         product_id
-    FROM {{source('raw_data', 'customer_logs')}}
+    FROM {{source('ecommerce_data_raw', 'customer_logs')}}
     WHERE user_id IS NOT NULL
 )
 SELECT * FROM cleaned_customer_logs

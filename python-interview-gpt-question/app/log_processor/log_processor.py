@@ -18,7 +18,6 @@ class LogProcessor:
         self.execute_process_log_functions(self.process_functions)
 
 def main():
-    print(PROJECT_ROOT)
     input_path = f"{PROJECT_ROOT}/target/raw"
     log_processor_path = f"{PROJECT_ROOT}/target"
     log_processor = LogProcessor(f"{input_path}/large_event_logs.json",

@@ -5,7 +5,7 @@ WITH cleaned_sales AS (
         sale_date,
         quantity,
         price_per_unit
-    FROM {{ source('raw_data', 'raw_sales_data')}}
+    FROM {{ source('ecommerce_data_raw', 'raw_sales_data')}}
     WHERE sale_date IS NOT NULL
 )
 SELECT * FROM cleaned_sales

@@ -1,7 +1,7 @@
 version: 1
 
 sources:
-  - name: raw_data
+  - name: ecommerce_data_raw
     tables:
       - name: raw_sales_data
       - name: customer_logs

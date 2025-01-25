@@ -1,6 +1,5 @@
 SELECT
     product_id,
-    product_name,
     category,
-    price
-FROM {{ source('raw_data', 'products') }}
+    device
+FROM {{ source('ecommerce_data_raw', 'product_catalog') }}
