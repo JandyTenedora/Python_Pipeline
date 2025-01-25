@@ -11,3 +11,4 @@ terraform.tfstate.backup
 
 # dbt
 /dbt/logs/dbt.log
+/infra/terraform/.terraform/
