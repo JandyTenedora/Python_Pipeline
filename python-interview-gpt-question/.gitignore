@@ -5,3 +5,10 @@ target/
 # terraform
 terraform.tfstate
 terraform.tfstate.backup
+
+# pycache
+*__pycache__/
+
+# dbt
+/dbt/logs/dbt.log
+/infra/terraform/.terraform/

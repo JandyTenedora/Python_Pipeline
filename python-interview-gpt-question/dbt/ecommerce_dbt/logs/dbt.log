@@ -1,0 +1,817 @@
+[0m14:48:21.502007 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1055c8c20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107d23d90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107d23ed0>]}
+
+
+============================== 14:48:21.504928 | 6a59d796-252e-47d4-b1a4-6ec8d4d9ef72 ==============================
+[0m14:48:21.504928 [info ] [MainThread]: Running with dbt=1.8.8
+[0m14:48:21.505326 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/jandytenedora/.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/Users/jandytenedora/Interview/python-interview-gpt-question/dbt/ecommerce_dbt/logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'invocation_command': 'dbt test', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m14:48:21.507323 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Could not find profile named 'ecommerce_dbt'
+[0m14:48:21.508339 [debug] [MainThread]: Resource report: {"command_name": "test", "command_wall_clock_time": 0.044496458, "process_user_time": 0.723324, "process_kernel_time": 0.079484, "process_mem_max_rss": "96993280", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m14:48:21.508642 [debug] [MainThread]: Command `dbt test` failed at 14:48:21.508576 after 0.04 seconds
+[0m14:48:21.508851 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107d423f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107a6b530>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107ca8f30>]}
+[0m14:48:21.509054 [debug] [MainThread]: Flushing usage events
+[0m14:48:42.298721 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104cb0c20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1065b7d90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1065b7ed0>]}
+
+
+============================== 14:48:42.301499 | e5fc14e3-09f3-4f86-8147-d2c6b27852de ==============================
+[0m14:48:42.301499 [info ] [MainThread]: Running with dbt=1.8.8
+[0m14:48:42.301873 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': '/Users/jandytenedora/Interview/python-interview-gpt-question/dbt/ecommerce_dbt/logs', 'profiles_dir': '/Users/jandytenedora/.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt test', 'send_anonymous_usage_stats': 'True'}
+[0m14:48:42.303808 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Could not find profile named 'dev'
+[0m14:48:42.304791 [debug] [MainThread]: Resource report: {"command_name": "test", "command_wall_clock_time": 0.04263946, "process_user_time": 0.725862, "process_kernel_time": 0.077997, "process_mem_max_rss": "96419840", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m14:48:42.305088 [debug] [MainThread]: Command `dbt test` failed at 14:48:42.305027 after 0.04 seconds
+[0m14:48:42.305300 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1065d23f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106303530>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10653cf30>]}
+[0m14:48:42.305510 [debug] [MainThread]: Flushing usage events
+[0m14:50:42.385277 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1030bcc20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1049c7d90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1049c7ed0>]}
+
+
+============================== 14:50:42.388356 | f2204a4e-1a61-40ed-9e0d-b76cce9d8f55 ==============================
+[0m14:50:42.388356 [info ] [MainThread]: Running with dbt=1.8.8
+[0m14:50:42.388753 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/jandytenedora/.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/Users/jandytenedora/Interview/python-interview-gpt-question/dbt/ecommerce_dbt/logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'invocation_command': 'dbt test', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m14:50:43.517808 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f2204a4e-1a61-40ed-9e0d-b76cce9d8f55', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113fb15b0>]}
+[0m14:50:43.548784 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'f2204a4e-1a61-40ed-9e0d-b76cce9d8f55', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113e79f20>]}
+[0m14:50:43.549214 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m14:50:43.563752 [debug] [MainThread]: checksum: ec53e341a936509427e16df1c646386a84befec52c1957e3f4359fbc36fc93f5, vars: {}, profile: , target: , version: 1.8.8
+[0m14:50:43.564487 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m14:50:43.564729 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'f2204a4e-1a61-40ed-9e0d-b76cce9d8f55', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113e4f350>]}
+[0m14:50:44.291043 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'f2204a4e-1a61-40ed-9e0d-b76cce9d8f55', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1149b97c0>]}
+[0m14:50:44.357327 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'f2204a4e-1a61-40ed-9e0d-b76cce9d8f55', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x115009010>]}
+[0m14:50:44.357661 [info ] [MainThread]: Found 2 models, 4 data tests, 482 macros
+[0m14:50:44.357868 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f2204a4e-1a61-40ed-9e0d-b76cce9d8f55', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114cf7ee0>]}
+[0m14:50:44.359009 [info ] [MainThread]: 
+[0m14:50:44.359350 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m14:50:44.362093 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_terraform-tutorial-430708_dbt_tutorial'
+[0m14:50:44.362344 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:50:45.129879 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f2204a4e-1a61-40ed-9e0d-b76cce9d8f55', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114fe8a10>]}
+[0m14:50:45.131284 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:50:45.132464 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m14:50:45.132993 [info ] [MainThread]: 
+[0m14:50:45.137698 [debug] [Thread-1 (]: Began running node test.ecommerce_dbt.not_null_my_first_dbt_model_id.5fb22c2710
+[0m14:50:45.138254 [debug] [Thread-3 (]: Began running node test.ecommerce_dbt.unique_my_first_dbt_model_id.16e066b321
+[0m14:50:45.138716 [debug] [Thread-4 (]: Began running node test.ecommerce_dbt.unique_my_second_dbt_model_id.57a0f8c493
+[0m14:50:45.139138 [debug] [Thread-2 (]: Began running node test.ecommerce_dbt.not_null_my_second_dbt_model_id.151b76d778
+[0m14:50:45.139571 [info ] [Thread-1 (]: 1 of 4 START test not_null_my_first_dbt_model_id ............................... [RUN]
+[0m14:50:45.140008 [info ] [Thread-3 (]: 3 of 4 START test unique_my_first_dbt_model_id ................................. [RUN]
+[0m14:50:45.140412 [info ] [Thread-4 (]: 4 of 4 START test unique_my_second_dbt_model_id ................................ [RUN]
+[0m14:50:45.140781 [info ] [Thread-2 (]: 2 of 4 START test not_null_my_second_dbt_model_id .............................. [RUN]
+[0m14:50:45.141260 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_terraform-tutorial-430708_dbt_tutorial, now test.ecommerce_dbt.not_null_my_first_dbt_model_id.5fb22c2710)
+[0m14:50:45.141743 [debug] [Thread-3 (]: Acquiring new bigquery connection 'test.ecommerce_dbt.unique_my_first_dbt_model_id.16e066b321'
+[0m14:50:45.142166 [debug] [Thread-4 (]: Acquiring new bigquery connection 'test.ecommerce_dbt.unique_my_second_dbt_model_id.57a0f8c493'
+[0m14:50:45.142534 [debug] [Thread-2 (]: Acquiring new bigquery connection 'test.ecommerce_dbt.not_null_my_second_dbt_model_id.151b76d778'
+[0m14:50:45.142832 [debug] [Thread-1 (]: Began compiling node test.ecommerce_dbt.not_null_my_first_dbt_model_id.5fb22c2710
+[0m14:50:45.143121 [debug] [Thread-3 (]: Began compiling node test.ecommerce_dbt.unique_my_first_dbt_model_id.16e066b321
+[0m14:50:45.143396 [debug] [Thread-4 (]: Began compiling node test.ecommerce_dbt.unique_my_second_dbt_model_id.57a0f8c493
+[0m14:50:45.143884 [debug] [Thread-2 (]: Began compiling node test.ecommerce_dbt.not_null_my_second_dbt_model_id.151b76d778
+[0m14:50:45.161242 [debug] [Thread-1 (]: Writing injected SQL for node "test.ecommerce_dbt.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m14:50:45.165768 [debug] [Thread-3 (]: Writing injected SQL for node "test.ecommerce_dbt.unique_my_first_dbt_model_id.16e066b321"
+[0m14:50:45.168713 [debug] [Thread-4 (]: Writing injected SQL for node "test.ecommerce_dbt.unique_my_second_dbt_model_id.57a0f8c493"
+[0m14:50:45.171085 [debug] [Thread-2 (]: Writing injected SQL for node "test.ecommerce_dbt.not_null_my_second_dbt_model_id.151b76d778"
+[0m14:50:45.172140 [debug] [Thread-1 (]: Began executing node test.ecommerce_dbt.not_null_my_first_dbt_model_id.5fb22c2710
+[0m14:50:45.172397 [debug] [Thread-2 (]: Began executing node test.ecommerce_dbt.not_null_my_second_dbt_model_id.151b76d778
+[0m14:50:45.177857 [debug] [Thread-4 (]: Began executing node test.ecommerce_dbt.unique_my_second_dbt_model_id.57a0f8c493
+[0m14:50:45.183805 [debug] [Thread-3 (]: Began executing node test.ecommerce_dbt.unique_my_first_dbt_model_id.16e066b321
+[0m14:50:45.186663 [debug] [Thread-2 (]: Writing runtime sql for node "test.ecommerce_dbt.not_null_my_second_dbt_model_id.151b76d778"
+[0m14:50:45.187475 [debug] [Thread-1 (]: Writing runtime sql for node "test.ecommerce_dbt.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m14:50:45.188676 [debug] [Thread-4 (]: Writing runtime sql for node "test.ecommerce_dbt.unique_my_second_dbt_model_id.57a0f8c493"
+[0m14:50:45.190001 [debug] [Thread-3 (]: Writing runtime sql for node "test.ecommerce_dbt.unique_my_first_dbt_model_id.16e066b321"
+[0m14:50:45.190987 [debug] [Thread-1 (]: On test.ecommerce_dbt.not_null_my_first_dbt_model_id.5fb22c2710: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "ecommerce_dbt", "target_name": "dev", "node_id": "test.ecommerce_dbt.not_null_my_first_dbt_model_id.5fb22c2710"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select id
+from `terraform-tutorial-430708`.`dbt_tutorial`.`my_first_dbt_model`
+where id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m14:50:45.191312 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:50:45.191571 [debug] [Thread-2 (]: On test.ecommerce_dbt.not_null_my_second_dbt_model_id.151b76d778: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "ecommerce_dbt", "target_name": "dev", "node_id": "test.ecommerce_dbt.not_null_my_second_dbt_model_id.151b76d778"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select id
+from `terraform-tutorial-430708`.`dbt_tutorial`.`my_second_dbt_model`
+where id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m14:50:45.191844 [debug] [Thread-4 (]: On test.ecommerce_dbt.unique_my_second_dbt_model_id.57a0f8c493: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "ecommerce_dbt", "target_name": "dev", "node_id": "test.ecommerce_dbt.unique_my_second_dbt_model_id.57a0f8c493"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+with dbt_test__target as (
+
+  select id as unique_field
+  from `terraform-tutorial-430708`.`dbt_tutorial`.`my_second_dbt_model`
+  where id is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m14:50:45.192726 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m14:50:45.193019 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m14:50:45.193473 [debug] [Thread-3 (]: On test.ecommerce_dbt.unique_my_first_dbt_model_id.16e066b321: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "ecommerce_dbt", "target_name": "dev", "node_id": "test.ecommerce_dbt.unique_my_first_dbt_model_id.16e066b321"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+with dbt_test__target as (
+
+  select id as unique_field
+  from `terraform-tutorial-430708`.`dbt_tutorial`.`my_first_dbt_model`
+  where id is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m14:50:45.194476 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m14:50:45.832308 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=terraform-tutorial-430708&j=bq:EU:75ff632e-4d8e-423a-89c1-c57a467b5b63&page=queryresults
+[0m14:50:45.895311 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=terraform-tutorial-430708&j=bq:EU:85b5258d-8f23-4e75-aa45-5225801bcd25&page=queryresults
+[0m14:50:45.940896 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=terraform-tutorial-430708&j=bq:EU:371b4f6f-9bb7-42d8-a1c1-db591517dea4&page=queryresults
+[0m14:50:46.053048 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=terraform-tutorial-430708&j=bq:EU:1fd08bfc-7f8e-4701-8101-5381db39f12e&page=queryresults
+[0m14:50:46.310967 [info ] [Thread-3 (]: 3 of 4 PASS unique_my_first_dbt_model_id ....................................... [[32mPASS[0m in 1.17s]
+[0m14:50:46.311467 [error] [Thread-1 (]: 1 of 4 FAIL 1 not_null_my_first_dbt_model_id ................................... [[31mFAIL 1[0m in 1.17s]
+[0m14:50:46.311876 [debug] [Thread-3 (]: Finished running node test.ecommerce_dbt.unique_my_first_dbt_model_id.16e066b321
+[0m14:50:46.312217 [debug] [Thread-1 (]: Finished running node test.ecommerce_dbt.not_null_my_first_dbt_model_id.5fb22c2710
+[0m14:50:46.351196 [info ] [Thread-2 (]: 2 of 4 PASS not_null_my_second_dbt_model_id .................................... [[32mPASS[0m in 1.21s]
+[0m14:50:46.352004 [debug] [Thread-2 (]: Finished running node test.ecommerce_dbt.not_null_my_second_dbt_model_id.151b76d778
+[0m14:50:46.452620 [info ] [Thread-4 (]: 4 of 4 PASS unique_my_second_dbt_model_id ...................................... [[32mPASS[0m in 1.31s]
+[0m14:50:46.453681 [debug] [Thread-4 (]: Finished running node test.ecommerce_dbt.unique_my_second_dbt_model_id.57a0f8c493
+[0m14:50:46.455666 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m14:50:46.456445 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:50:46.456838 [debug] [MainThread]: Connection 'test.ecommerce_dbt.not_null_my_first_dbt_model_id.5fb22c2710' was properly closed.
+[0m14:50:46.457182 [debug] [MainThread]: Connection 'test.ecommerce_dbt.unique_my_first_dbt_model_id.16e066b321' was properly closed.
+[0m14:50:46.457492 [debug] [MainThread]: Connection 'test.ecommerce_dbt.unique_my_second_dbt_model_id.57a0f8c493' was properly closed.
+[0m14:50:46.457797 [debug] [MainThread]: Connection 'test.ecommerce_dbt.not_null_my_second_dbt_model_id.151b76d778' was properly closed.
+[0m14:50:46.458187 [info ] [MainThread]: 
+[0m14:50:46.458524 [info ] [MainThread]: Finished running 4 data tests in 0 hours 0 minutes and 2.10 seconds (2.10s).
+[0m14:50:46.459627 [debug] [MainThread]: Command end result
+[0m14:50:46.486665 [info ] [MainThread]: 
+[0m14:50:46.487009 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m14:50:46.487200 [info ] [MainThread]: 
+[0m14:50:46.487444 [error] [MainThread]: [31mFailure in test not_null_my_first_dbt_model_id (models/example/schema.yml)[0m
+[0m14:50:46.487656 [error] [MainThread]:   Got 1 result, configured to fail if != 0
+[0m14:50:46.487812 [info ] [MainThread]: 
+[0m14:50:46.488012 [info ] [MainThread]:   compiled code at target/compiled/ecommerce_dbt/models/example/schema.yml/not_null_my_first_dbt_model_id.sql
+[0m14:50:46.488175 [info ] [MainThread]: 
+[0m14:50:46.488363 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=1 SKIP=0 TOTAL=4
+[0m14:50:46.490760 [debug] [MainThread]: Resource report: {"command_name": "test", "command_wall_clock_time": 4.1449723, "process_user_time": 2.143037, "process_kernel_time": 0.299335, "process_mem_max_rss": "212566016", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m14:50:46.491145 [debug] [MainThread]: Command `dbt test` failed at 14:50:46.491073 after 4.15 seconds
+[0m14:50:46.491427 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114fbf1d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1150479d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1150472f0>]}
+[0m14:50:46.491667 [debug] [MainThread]: Flushing usage events
+[0m14:55:03.433630 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106e84c20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10878fd90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10878fed0>]}
+
+
+============================== 14:55:03.437256 | b536ad70-68b6-448a-82cb-73c6bb55420b ==============================
+[0m14:55:03.437256 [info ] [MainThread]: Running with dbt=1.8.8
+[0m14:55:03.437729 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': '/Users/jandytenedora/Interview/python-interview-gpt-question/dbt/ecommerce_dbt/logs', 'fail_fast': 'False', 'profiles_dir': '/Users/jandytenedora/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'invocation_command': 'dbt test', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m14:55:04.235647 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b536ad70-68b6-448a-82cb-73c6bb55420b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1186b15b0>]}
+[0m14:55:04.266136 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'b536ad70-68b6-448a-82cb-73c6bb55420b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x118579f20>]}
+[0m14:55:04.266532 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m14:55:04.280757 [debug] [MainThread]: checksum: ec53e341a936509427e16df1c646386a84befec52c1957e3f4359fbc36fc93f5, vars: {}, profile: , target: , version: 1.8.8
+[0m14:55:04.360110 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m14:55:04.360574 [debug] [MainThread]: Partial parsing: updated file: ecommerce_dbt://models/example/my_first_dbt_model.sql
+[0m14:55:04.574501 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'b536ad70-68b6-448a-82cb-73c6bb55420b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1187afa50>]}
+[0m14:55:04.640189 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'b536ad70-68b6-448a-82cb-73c6bb55420b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x118bbf4d0>]}
+[0m14:55:04.640536 [info ] [MainThread]: Found 2 models, 4 data tests, 482 macros
+[0m14:55:04.640742 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b536ad70-68b6-448a-82cb-73c6bb55420b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x118c952b0>]}
+[0m14:55:04.641927 [info ] [MainThread]: 
+[0m14:55:04.642285 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m14:55:04.644629 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_terraform-tutorial-430708_dbt_tutorial'
+[0m14:55:04.644865 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:55:05.443010 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b536ad70-68b6-448a-82cb-73c6bb55420b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x118a30e20>]}
+[0m14:55:05.444273 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:55:05.445214 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m14:55:05.445712 [info ] [MainThread]: 
+[0m14:55:05.450360 [debug] [Thread-3 (]: Began running node test.ecommerce_dbt.unique_my_first_dbt_model_id.16e066b321
+[0m14:55:05.451084 [debug] [Thread-4 (]: Began running node test.ecommerce_dbt.unique_my_second_dbt_model_id.57a0f8c493
+[0m14:55:05.451592 [debug] [Thread-1 (]: Began running node test.ecommerce_dbt.not_null_my_first_dbt_model_id.5fb22c2710
+[0m14:55:05.451985 [debug] [Thread-2 (]: Began running node test.ecommerce_dbt.not_null_my_second_dbt_model_id.151b76d778
+[0m14:55:05.452430 [info ] [Thread-3 (]: 3 of 4 START test unique_my_first_dbt_model_id ................................. [RUN]
+[0m14:55:05.452875 [info ] [Thread-4 (]: 4 of 4 START test unique_my_second_dbt_model_id ................................ [RUN]
+[0m14:55:05.453261 [info ] [Thread-1 (]: 1 of 4 START test not_null_my_first_dbt_model_id ............................... [RUN]
+[0m14:55:05.453609 [info ] [Thread-2 (]: 2 of 4 START test not_null_my_second_dbt_model_id .............................. [RUN]
+[0m14:55:05.454117 [debug] [Thread-3 (]: Acquiring new bigquery connection 'test.ecommerce_dbt.unique_my_first_dbt_model_id.16e066b321'
+[0m14:55:05.454518 [debug] [Thread-4 (]: Acquiring new bigquery connection 'test.ecommerce_dbt.unique_my_second_dbt_model_id.57a0f8c493'
+[0m14:55:05.454868 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_terraform-tutorial-430708_dbt_tutorial, now test.ecommerce_dbt.not_null_my_first_dbt_model_id.5fb22c2710)
+[0m14:55:05.455244 [debug] [Thread-2 (]: Acquiring new bigquery connection 'test.ecommerce_dbt.not_null_my_second_dbt_model_id.151b76d778'
+[0m14:55:05.455552 [debug] [Thread-3 (]: Began compiling node test.ecommerce_dbt.unique_my_first_dbt_model_id.16e066b321
+[0m14:55:05.455838 [debug] [Thread-4 (]: Began compiling node test.ecommerce_dbt.unique_my_second_dbt_model_id.57a0f8c493
+[0m14:55:05.456112 [debug] [Thread-1 (]: Began compiling node test.ecommerce_dbt.not_null_my_first_dbt_model_id.5fb22c2710
+[0m14:55:05.456380 [debug] [Thread-2 (]: Began compiling node test.ecommerce_dbt.not_null_my_second_dbt_model_id.151b76d778
+[0m14:55:05.472941 [debug] [Thread-3 (]: Writing injected SQL for node "test.ecommerce_dbt.unique_my_first_dbt_model_id.16e066b321"
+[0m14:55:05.473579 [debug] [Thread-4 (]: Writing injected SQL for node "test.ecommerce_dbt.unique_my_second_dbt_model_id.57a0f8c493"
+[0m14:55:05.480125 [debug] [Thread-1 (]: Writing injected SQL for node "test.ecommerce_dbt.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m14:55:05.482965 [debug] [Thread-2 (]: Writing injected SQL for node "test.ecommerce_dbt.not_null_my_second_dbt_model_id.151b76d778"
+[0m14:55:05.483578 [debug] [Thread-3 (]: Began executing node test.ecommerce_dbt.unique_my_first_dbt_model_id.16e066b321
+[0m14:55:05.490401 [debug] [Thread-4 (]: Began executing node test.ecommerce_dbt.unique_my_second_dbt_model_id.57a0f8c493
+[0m14:55:05.500656 [debug] [Thread-3 (]: Writing runtime sql for node "test.ecommerce_dbt.unique_my_first_dbt_model_id.16e066b321"
+[0m14:55:05.500961 [debug] [Thread-1 (]: Began executing node test.ecommerce_dbt.not_null_my_first_dbt_model_id.5fb22c2710
+[0m14:55:05.503028 [debug] [Thread-4 (]: Writing runtime sql for node "test.ecommerce_dbt.unique_my_second_dbt_model_id.57a0f8c493"
+[0m14:55:05.504240 [debug] [Thread-1 (]: Writing runtime sql for node "test.ecommerce_dbt.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m14:55:05.504560 [debug] [Thread-2 (]: Began executing node test.ecommerce_dbt.not_null_my_second_dbt_model_id.151b76d778
+[0m14:55:05.504843 [debug] [Thread-3 (]: On test.ecommerce_dbt.unique_my_first_dbt_model_id.16e066b321: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "ecommerce_dbt", "target_name": "dev", "node_id": "test.ecommerce_dbt.unique_my_first_dbt_model_id.16e066b321"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+with dbt_test__target as (
+
+  select id as unique_field
+  from `terraform-tutorial-430708`.`dbt_tutorial`.`my_first_dbt_model`
+  where id is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m14:55:05.506464 [debug] [Thread-2 (]: Writing runtime sql for node "test.ecommerce_dbt.not_null_my_second_dbt_model_id.151b76d778"
+[0m14:55:05.506899 [debug] [Thread-4 (]: On test.ecommerce_dbt.unique_my_second_dbt_model_id.57a0f8c493: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "ecommerce_dbt", "target_name": "dev", "node_id": "test.ecommerce_dbt.unique_my_second_dbt_model_id.57a0f8c493"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+with dbt_test__target as (
+
+  select id as unique_field
+  from `terraform-tutorial-430708`.`dbt_tutorial`.`my_second_dbt_model`
+  where id is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m14:55:05.507178 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m14:55:05.507519 [debug] [Thread-1 (]: On test.ecommerce_dbt.not_null_my_first_dbt_model_id.5fb22c2710: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "ecommerce_dbt", "target_name": "dev", "node_id": "test.ecommerce_dbt.not_null_my_first_dbt_model_id.5fb22c2710"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select id
+from `terraform-tutorial-430708`.`dbt_tutorial`.`my_first_dbt_model`
+where id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m14:55:05.507815 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m14:55:05.508723 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:55:05.508974 [debug] [Thread-2 (]: On test.ecommerce_dbt.not_null_my_second_dbt_model_id.151b76d778: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "ecommerce_dbt", "target_name": "dev", "node_id": "test.ecommerce_dbt.not_null_my_second_dbt_model_id.151b76d778"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select id
+from `terraform-tutorial-430708`.`dbt_tutorial`.`my_second_dbt_model`
+where id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m14:55:05.510360 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m14:55:05.955735 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=terraform-tutorial-430708&j=bq:EU:370b9322-6ba2-490b-9796-8e1a495c7c2c&page=queryresults
+[0m14:55:05.958237 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=terraform-tutorial-430708&j=bq:EU:34517701-b6a8-4854-9476-9671a745eeba&page=queryresults
+[0m14:55:06.158921 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=terraform-tutorial-430708&j=bq:EU:ae7a5d51-e931-4639-9099-e50126b5df62&page=queryresults
+[0m14:55:06.162118 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=terraform-tutorial-430708&j=bq:EU:e5b2f1d3-ce42-431d-9dd4-177515957b36&page=queryresults
+[0m14:55:06.379525 [info ] [Thread-3 (]: 3 of 4 PASS unique_my_first_dbt_model_id ....................................... [[32mPASS[0m in 0.93s]
+[0m14:55:06.380359 [debug] [Thread-3 (]: Finished running node test.ecommerce_dbt.unique_my_first_dbt_model_id.16e066b321
+[0m14:55:06.435778 [error] [Thread-1 (]: 1 of 4 FAIL 1 not_null_my_first_dbt_model_id ................................... [[31mFAIL 1[0m in 0.98s]
+[0m14:55:06.437450 [debug] [Thread-1 (]: Finished running node test.ecommerce_dbt.not_null_my_first_dbt_model_id.5fb22c2710
+[0m14:55:06.534264 [info ] [Thread-4 (]: 4 of 4 PASS unique_my_second_dbt_model_id ...................................... [[32mPASS[0m in 1.08s]
+[0m14:55:06.535223 [debug] [Thread-4 (]: Finished running node test.ecommerce_dbt.unique_my_second_dbt_model_id.57a0f8c493
+[0m14:55:06.544799 [info ] [Thread-2 (]: 2 of 4 PASS not_null_my_second_dbt_model_id .................................... [[32mPASS[0m in 1.09s]
+[0m14:55:06.545544 [debug] [Thread-2 (]: Finished running node test.ecommerce_dbt.not_null_my_second_dbt_model_id.151b76d778
+[0m14:55:06.547293 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m14:55:06.548028 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:55:06.548391 [debug] [MainThread]: Connection 'test.ecommerce_dbt.not_null_my_first_dbt_model_id.5fb22c2710' was properly closed.
+[0m14:55:06.548719 [debug] [MainThread]: Connection 'test.ecommerce_dbt.unique_my_first_dbt_model_id.16e066b321' was properly closed.
+[0m14:55:06.549029 [debug] [MainThread]: Connection 'test.ecommerce_dbt.unique_my_second_dbt_model_id.57a0f8c493' was properly closed.
+[0m14:55:06.549352 [debug] [MainThread]: Connection 'test.ecommerce_dbt.not_null_my_second_dbt_model_id.151b76d778' was properly closed.
+[0m14:55:06.549670 [info ] [MainThread]: 
+[0m14:55:06.549998 [info ] [MainThread]: Finished running 4 data tests in 0 hours 0 minutes and 1.91 seconds (1.91s).
+[0m14:55:06.551089 [debug] [MainThread]: Command end result
+[0m14:55:06.578467 [info ] [MainThread]: 
+[0m14:55:06.578826 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m14:55:06.579018 [info ] [MainThread]: 
+[0m14:55:06.579260 [error] [MainThread]: [31mFailure in test not_null_my_first_dbt_model_id (models/example/schema.yml)[0m
+[0m14:55:06.579478 [error] [MainThread]:   Got 1 result, configured to fail if != 0
+[0m14:55:06.579636 [info ] [MainThread]: 
+[0m14:55:06.579831 [info ] [MainThread]:   compiled code at target/compiled/ecommerce_dbt/models/example/schema.yml/not_null_my_first_dbt_model_id.sql
+[0m14:55:06.580004 [info ] [MainThread]: 
+[0m14:55:06.580198 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=1 SKIP=0 TOTAL=4
+[0m14:55:06.582687 [debug] [MainThread]: Resource report: {"command_name": "test", "command_wall_clock_time": 3.1919298, "process_user_time": 1.726857, "process_kernel_time": 0.307269, "process_mem_max_rss": "212189184", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m14:55:06.583044 [debug] [MainThread]: Command `dbt test` failed at 14:55:06.582974 after 3.19 seconds
+[0m14:55:06.583325 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1086c1190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11a111230>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11a111390>]}
+[0m14:55:06.583553 [debug] [MainThread]: Flushing usage events
+[0m14:55:22.867228 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10717cc20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108fe7d90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108fe7ed0>]}
+
+
+============================== 14:55:22.870004 | d4fdb3d6-a74c-4a5e-9b4f-400612469b67 ==============================
+[0m14:55:22.870004 [info ] [MainThread]: Running with dbt=1.8.8
+[0m14:55:22.870406 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/jandytenedora/.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': '/Users/jandytenedora/Interview/python-interview-gpt-question/dbt/ecommerce_dbt/logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m14:55:23.445686 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd4fdb3d6-a74c-4a5e-9b4f-400612469b67', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x118dad5b0>]}
+[0m14:55:23.476751 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'd4fdb3d6-a74c-4a5e-9b4f-400612469b67', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x118c79f20>]}
+[0m14:55:23.477169 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m14:55:23.491099 [debug] [MainThread]: checksum: ec53e341a936509427e16df1c646386a84befec52c1957e3f4359fbc36fc93f5, vars: {}, profile: , target: , version: 1.8.8
+[0m14:55:23.570924 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m14:55:23.571505 [debug] [MainThread]: Partial parsing: updated file: ecommerce_dbt://models/example/my_first_dbt_model.sql
+[0m14:55:23.783962 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'd4fdb3d6-a74c-4a5e-9b4f-400612469b67', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x118faba50>]}
+[0m14:55:23.839640 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'd4fdb3d6-a74c-4a5e-9b4f-400612469b67', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1192686e0>]}
+[0m14:55:23.839969 [info ] [MainThread]: Found 2 models, 4 data tests, 482 macros
+[0m14:55:23.840181 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd4fdb3d6-a74c-4a5e-9b4f-400612469b67', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x119569a90>]}
+[0m14:55:23.841312 [info ] [MainThread]: 
+[0m14:55:23.841660 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m14:55:23.844000 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_terraform-tutorial-430708'
+[0m14:55:23.844240 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:55:24.873838 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_terraform-tutorial-430708, now list_terraform-tutorial-430708_dbt_tutorial)
+[0m14:55:24.874896 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:55:25.010204 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd4fdb3d6-a74c-4a5e-9b4f-400612469b67', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11946f380>]}
+[0m14:55:25.011163 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:55:25.012083 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m14:55:25.012561 [info ] [MainThread]: 
+[0m14:55:25.016763 [debug] [Thread-1 (]: Began running node model.ecommerce_dbt.my_first_dbt_model
+[0m14:55:25.017366 [info ] [Thread-1 (]: 1 of 2 START sql table model dbt_tutorial.my_first_dbt_model ................... [RUN]
+[0m14:55:25.017852 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_terraform-tutorial-430708_dbt_tutorial, now model.ecommerce_dbt.my_first_dbt_model)
+[0m14:55:25.018235 [debug] [Thread-1 (]: Began compiling node model.ecommerce_dbt.my_first_dbt_model
+[0m14:55:25.032611 [debug] [Thread-1 (]: Writing injected SQL for node "model.ecommerce_dbt.my_first_dbt_model"
+[0m14:55:25.033959 [debug] [Thread-1 (]: Began executing node model.ecommerce_dbt.my_first_dbt_model
+[0m14:55:25.045865 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:55:25.237953 [debug] [Thread-1 (]: Writing runtime sql for node "model.ecommerce_dbt.my_first_dbt_model"
+[0m14:55:25.239037 [debug] [Thread-1 (]: On model.ecommerce_dbt.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "ecommerce_dbt", "target_name": "dev", "node_id": "model.ecommerce_dbt.my_first_dbt_model"} */
+
+  
+    
+
+    create or replace table `terraform-tutorial-430708`.`dbt_tutorial`.`my_first_dbt_model`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+where id is not null
+    );
+  
+[0m14:55:25.648180 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=terraform-tutorial-430708&j=bq:EU:bd84cf90-f73c-4868-bfa7-65a793a0c9f1&page=queryresults
+[0m14:55:28.325507 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd4fdb3d6-a74c-4a5e-9b4f-400612469b67', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x119553650>]}
+[0m14:55:28.326291 [info ] [Thread-1 (]: 1 of 2 OK created sql table model dbt_tutorial.my_first_dbt_model .............. [[32mCREATE TABLE (1.0 rows, 0 processed)[0m in 3.31s]
+[0m14:55:28.326842 [debug] [Thread-1 (]: Finished running node model.ecommerce_dbt.my_first_dbt_model
+[0m14:55:28.327511 [debug] [Thread-2 (]: Began running node model.ecommerce_dbt.my_second_dbt_model
+[0m14:55:28.328007 [info ] [Thread-2 (]: 2 of 2 START sql view model dbt_tutorial.my_second_dbt_model ................... [RUN]
+[0m14:55:28.328450 [debug] [Thread-2 (]: Acquiring new bigquery connection 'model.ecommerce_dbt.my_second_dbt_model'
+[0m14:55:28.328730 [debug] [Thread-2 (]: Began compiling node model.ecommerce_dbt.my_second_dbt_model
+[0m14:55:28.330932 [debug] [Thread-2 (]: Writing injected SQL for node "model.ecommerce_dbt.my_second_dbt_model"
+[0m14:55:28.331640 [debug] [Thread-2 (]: Began executing node model.ecommerce_dbt.my_second_dbt_model
+[0m14:55:28.345622 [debug] [Thread-2 (]: Writing runtime sql for node "model.ecommerce_dbt.my_second_dbt_model"
+[0m14:55:28.346225 [debug] [Thread-2 (]: On model.ecommerce_dbt.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "ecommerce_dbt", "target_name": "dev", "node_id": "model.ecommerce_dbt.my_second_dbt_model"} */
+
+
+  create or replace view `terraform-tutorial-430708`.`dbt_tutorial`.`my_second_dbt_model`
+  OPTIONS()
+  as -- Use the `ref` function to select from other models
+
+select *
+from `terraform-tutorial-430708`.`dbt_tutorial`.`my_first_dbt_model`
+where id = 1;
+
+
+[0m14:55:28.346475 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m14:55:28.784841 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=terraform-tutorial-430708&j=bq:EU:4315dbe5-d305-4afb-bc8d-b26d2e8afaff&page=queryresults
+[0m14:55:29.124524 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd4fdb3d6-a74c-4a5e-9b4f-400612469b67', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1195ed4f0>]}
+[0m14:55:29.125525 [info ] [Thread-2 (]: 2 of 2 OK created sql view model dbt_tutorial.my_second_dbt_model .............. [[32mCREATE VIEW (0 processed)[0m in 0.80s]
+[0m14:55:29.126360 [debug] [Thread-2 (]: Finished running node model.ecommerce_dbt.my_second_dbt_model
+[0m14:55:29.128136 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m14:55:29.128882 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:55:29.129191 [debug] [MainThread]: Connection 'model.ecommerce_dbt.my_first_dbt_model' was properly closed.
+[0m14:55:29.129488 [debug] [MainThread]: Connection 'model.ecommerce_dbt.my_second_dbt_model' was properly closed.
+[0m14:55:29.129809 [info ] [MainThread]: 
+[0m14:55:29.130144 [info ] [MainThread]: Finished running 1 table model, 1 view model in 0 hours 0 minutes and 5.29 seconds (5.29s).
+[0m14:55:29.131010 [debug] [MainThread]: Command end result
+[0m14:55:29.158636 [info ] [MainThread]: 
+[0m14:55:29.159092 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m14:55:29.159371 [info ] [MainThread]: 
+[0m14:55:29.159627 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+[0m14:55:29.162162 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 6.3308005, "process_user_time": 1.735659, "process_kernel_time": 0.237218, "process_mem_max_rss": "211369984", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m14:55:29.162478 [debug] [MainThread]: Command `dbt run` succeeded at 14:55:29.162418 after 6.33 seconds
+[0m14:55:29.162747 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11951b930>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1195af530>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x118d84f50>]}
+[0m14:55:29.163003 [debug] [MainThread]: Flushing usage events
+[0m14:55:33.253176 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105fc8c20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1088e7d90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1088e7ed0>]}
+
+
+============================== 14:55:33.255975 | dc24165c-2347-41c8-9e95-f2444fa7681d ==============================
+[0m14:55:33.255975 [info ] [MainThread]: Running with dbt=1.8.8
+[0m14:55:33.256353 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/jandytenedora/.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': '/Users/jandytenedora/Interview/python-interview-gpt-question/dbt/ecommerce_dbt/logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt test', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m14:55:33.790550 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'dc24165c-2347-41c8-9e95-f2444fa7681d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1192b15b0>]}
+[0m14:55:33.821386 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'dc24165c-2347-41c8-9e95-f2444fa7681d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x119179f20>]}
+[0m14:55:33.821815 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m14:55:33.833769 [debug] [MainThread]: checksum: ec53e341a936509427e16df1c646386a84befec52c1957e3f4359fbc36fc93f5, vars: {}, profile: , target: , version: 1.8.8
+[0m14:55:33.902852 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m14:55:33.903234 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m14:55:33.925729 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'dc24165c-2347-41c8-9e95-f2444fa7681d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11914f950>]}
+[0m14:55:33.990162 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'dc24165c-2347-41c8-9e95-f2444fa7681d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1195b2f30>]}
+[0m14:55:33.990546 [info ] [MainThread]: Found 2 models, 4 data tests, 482 macros
+[0m14:55:33.990784 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'dc24165c-2347-41c8-9e95-f2444fa7681d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x119576430>]}
+[0m14:55:33.991976 [info ] [MainThread]: 
+[0m14:55:33.992355 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m14:55:33.994735 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_terraform-tutorial-430708_dbt_tutorial'
+[0m14:55:33.994985 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:55:34.621249 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'dc24165c-2347-41c8-9e95-f2444fa7681d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x119724ae0>]}
+[0m14:55:34.622135 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:55:34.622904 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m14:55:34.623342 [info ] [MainThread]: 
+[0m14:55:34.626487 [debug] [Thread-2 (]: Began running node test.ecommerce_dbt.not_null_my_second_dbt_model_id.151b76d778
+[0m14:55:34.627000 [debug] [Thread-3 (]: Began running node test.ecommerce_dbt.unique_my_first_dbt_model_id.16e066b321
+[0m14:55:34.627486 [debug] [Thread-4 (]: Began running node test.ecommerce_dbt.unique_my_second_dbt_model_id.57a0f8c493
+[0m14:55:34.627937 [info ] [Thread-2 (]: 2 of 4 START test not_null_my_second_dbt_model_id .............................. [RUN]
+[0m14:55:34.628491 [debug] [Thread-1 (]: Began running node test.ecommerce_dbt.not_null_my_first_dbt_model_id.5fb22c2710
+[0m14:55:34.629041 [info ] [Thread-3 (]: 3 of 4 START test unique_my_first_dbt_model_id ................................. [RUN]
+[0m14:55:34.629527 [info ] [Thread-4 (]: 4 of 4 START test unique_my_second_dbt_model_id ................................ [RUN]
+[0m14:55:34.630155 [debug] [Thread-2 (]: Acquiring new bigquery connection 'test.ecommerce_dbt.not_null_my_second_dbt_model_id.151b76d778'
+[0m14:55:34.630581 [info ] [Thread-1 (]: 1 of 4 START test not_null_my_first_dbt_model_id ............................... [RUN]
+[0m14:55:34.631082 [debug] [Thread-3 (]: Acquiring new bigquery connection 'test.ecommerce_dbt.unique_my_first_dbt_model_id.16e066b321'
+[0m14:55:34.631551 [debug] [Thread-4 (]: Acquiring new bigquery connection 'test.ecommerce_dbt.unique_my_second_dbt_model_id.57a0f8c493'
+[0m14:55:34.631918 [debug] [Thread-2 (]: Began compiling node test.ecommerce_dbt.not_null_my_second_dbt_model_id.151b76d778
+[0m14:55:34.632307 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_terraform-tutorial-430708_dbt_tutorial, now test.ecommerce_dbt.not_null_my_first_dbt_model_id.5fb22c2710)
+[0m14:55:34.632669 [debug] [Thread-3 (]: Began compiling node test.ecommerce_dbt.unique_my_first_dbt_model_id.16e066b321
+[0m14:55:34.632990 [debug] [Thread-4 (]: Began compiling node test.ecommerce_dbt.unique_my_second_dbt_model_id.57a0f8c493
+[0m14:55:34.647540 [debug] [Thread-1 (]: Began compiling node test.ecommerce_dbt.not_null_my_first_dbt_model_id.5fb22c2710
+[0m14:55:34.652941 [debug] [Thread-2 (]: Writing injected SQL for node "test.ecommerce_dbt.not_null_my_second_dbt_model_id.151b76d778"
+[0m14:55:34.657453 [debug] [Thread-3 (]: Writing injected SQL for node "test.ecommerce_dbt.unique_my_first_dbt_model_id.16e066b321"
+[0m14:55:34.659792 [debug] [Thread-4 (]: Writing injected SQL for node "test.ecommerce_dbt.unique_my_second_dbt_model_id.57a0f8c493"
+[0m14:55:34.662427 [debug] [Thread-1 (]: Writing injected SQL for node "test.ecommerce_dbt.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m14:55:34.663202 [debug] [Thread-3 (]: Began executing node test.ecommerce_dbt.unique_my_first_dbt_model_id.16e066b321
+[0m14:55:34.663505 [debug] [Thread-2 (]: Began executing node test.ecommerce_dbt.not_null_my_second_dbt_model_id.151b76d778
+[0m14:55:34.663736 [debug] [Thread-4 (]: Began executing node test.ecommerce_dbt.unique_my_second_dbt_model_id.57a0f8c493
+[0m14:55:34.671029 [debug] [Thread-1 (]: Began executing node test.ecommerce_dbt.not_null_my_first_dbt_model_id.5fb22c2710
+[0m14:55:34.676685 [debug] [Thread-3 (]: Writing runtime sql for node "test.ecommerce_dbt.unique_my_first_dbt_model_id.16e066b321"
+[0m14:55:34.678009 [debug] [Thread-2 (]: Writing runtime sql for node "test.ecommerce_dbt.not_null_my_second_dbt_model_id.151b76d778"
+[0m14:55:34.679159 [debug] [Thread-4 (]: Writing runtime sql for node "test.ecommerce_dbt.unique_my_second_dbt_model_id.57a0f8c493"
+[0m14:55:34.680453 [debug] [Thread-1 (]: Writing runtime sql for node "test.ecommerce_dbt.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m14:55:34.681076 [debug] [Thread-2 (]: On test.ecommerce_dbt.not_null_my_second_dbt_model_id.151b76d778: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "ecommerce_dbt", "target_name": "dev", "node_id": "test.ecommerce_dbt.not_null_my_second_dbt_model_id.151b76d778"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select id
+from `terraform-tutorial-430708`.`dbt_tutorial`.`my_second_dbt_model`
+where id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m14:55:34.681386 [debug] [Thread-3 (]: On test.ecommerce_dbt.unique_my_first_dbt_model_id.16e066b321: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "ecommerce_dbt", "target_name": "dev", "node_id": "test.ecommerce_dbt.unique_my_first_dbt_model_id.16e066b321"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+with dbt_test__target as (
+
+  select id as unique_field
+  from `terraform-tutorial-430708`.`dbt_tutorial`.`my_first_dbt_model`
+  where id is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m14:55:34.681665 [debug] [Thread-4 (]: On test.ecommerce_dbt.unique_my_second_dbt_model_id.57a0f8c493: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "ecommerce_dbt", "target_name": "dev", "node_id": "test.ecommerce_dbt.unique_my_second_dbt_model_id.57a0f8c493"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+with dbt_test__target as (
+
+  select id as unique_field
+  from `terraform-tutorial-430708`.`dbt_tutorial`.`my_second_dbt_model`
+  where id is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m14:55:34.681933 [debug] [Thread-1 (]: On test.ecommerce_dbt.not_null_my_first_dbt_model_id.5fb22c2710: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "ecommerce_dbt", "target_name": "dev", "node_id": "test.ecommerce_dbt.not_null_my_first_dbt_model_id.5fb22c2710"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select id
+from `terraform-tutorial-430708`.`dbt_tutorial`.`my_first_dbt_model`
+where id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m14:55:34.682152 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m14:55:34.682359 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m14:55:34.682561 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m14:55:34.682765 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:55:35.180077 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=terraform-tutorial-430708&j=bq:EU:eaf0aedd-c209-4ddb-9d1c-7b2437bbd16d&page=queryresults
+[0m14:55:35.370281 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=terraform-tutorial-430708&j=bq:EU:81d4c06e-0768-48de-8668-e55442afc608&page=queryresults
+[0m14:55:35.470331 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=terraform-tutorial-430708&j=bq:EU:23385581-6db2-4fb7-b8d9-f5bd2f5a6cf7&page=queryresults
+[0m14:55:35.483828 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=terraform-tutorial-430708&j=bq:EU:f7a4d7d1-1bdc-4d7c-b65e-90030ef29774&page=queryresults
+[0m14:55:35.597405 [info ] [Thread-1 (]: 1 of 4 PASS not_null_my_first_dbt_model_id ..................................... [[32mPASS[0m in 0.96s]
+[0m14:55:35.598594 [debug] [Thread-1 (]: Finished running node test.ecommerce_dbt.not_null_my_first_dbt_model_id.5fb22c2710
+[0m14:55:35.783610 [info ] [Thread-3 (]: 3 of 4 PASS unique_my_first_dbt_model_id ....................................... [[32mPASS[0m in 1.15s]
+[0m14:55:35.784611 [debug] [Thread-3 (]: Finished running node test.ecommerce_dbt.unique_my_first_dbt_model_id.16e066b321
+[0m14:55:35.842342 [info ] [Thread-2 (]: 2 of 4 PASS not_null_my_second_dbt_model_id .................................... [[32mPASS[0m in 1.21s]
+[0m14:55:35.843245 [debug] [Thread-2 (]: Finished running node test.ecommerce_dbt.not_null_my_second_dbt_model_id.151b76d778
+[0m14:55:35.853469 [info ] [Thread-4 (]: 4 of 4 PASS unique_my_second_dbt_model_id ...................................... [[32mPASS[0m in 1.22s]
+[0m14:55:35.854123 [debug] [Thread-4 (]: Finished running node test.ecommerce_dbt.unique_my_second_dbt_model_id.57a0f8c493
+[0m14:55:35.855738 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m14:55:35.856346 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:55:35.856647 [debug] [MainThread]: Connection 'test.ecommerce_dbt.not_null_my_first_dbt_model_id.5fb22c2710' was properly closed.
+[0m14:55:35.856916 [debug] [MainThread]: Connection 'test.ecommerce_dbt.not_null_my_second_dbt_model_id.151b76d778' was properly closed.
+[0m14:55:35.857166 [debug] [MainThread]: Connection 'test.ecommerce_dbt.unique_my_first_dbt_model_id.16e066b321' was properly closed.
+[0m14:55:35.857422 [debug] [MainThread]: Connection 'test.ecommerce_dbt.unique_my_second_dbt_model_id.57a0f8c493' was properly closed.
+[0m14:55:35.857726 [info ] [MainThread]: 
+[0m14:55:35.858045 [info ] [MainThread]: Finished running 4 data tests in 0 hours 0 minutes and 1.87 seconds (1.87s).
+[0m14:55:35.859138 [debug] [MainThread]: Command end result
+[0m14:55:35.883547 [info ] [MainThread]: 
+[0m14:55:35.883886 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m14:55:35.884087 [info ] [MainThread]: 
+[0m14:55:35.884288 [info ] [MainThread]: Done. PASS=4 WARN=0 ERROR=0 SKIP=0 TOTAL=4
+[0m14:55:35.885828 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 2.6713684, "process_user_time": 1.514725, "process_kernel_time": 0.21768, "process_mem_max_rss": "208912384", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m14:55:35.886126 [debug] [MainThread]: Command `dbt test` succeeded at 14:55:35.886066 after 2.67 seconds
+[0m14:55:35.886366 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108815190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1196dbe30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1196dbd80>]}
+[0m14:55:35.886579 [debug] [MainThread]: Flushing usage events
+[0m14:58:21.938307 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104498c20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10621fd90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10621fed0>]}
+
+
+============================== 14:58:21.941442 | 0586dc14-a667-424e-be81-0ee4d9b5b605 ==============================
+[0m14:58:21.941442 [info ] [MainThread]: Running with dbt=1.8.8
+[0m14:58:21.941831 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '/Users/jandytenedora/.dbt', 'log_path': '/Users/jandytenedora/Interview/python-interview-gpt-question/dbt/ecommerce_dbt/logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m14:58:21.951776 [info ] [MainThread]: dbt version: 1.8.8
+[0m14:58:21.952040 [info ] [MainThread]: python version: 3.13.1
+[0m14:58:21.952208 [info ] [MainThread]: python path: /Users/jandytenedora/Interview/python-interview-gpt-question/gpt_question/bin/python3.13
+[0m14:58:21.952370 [info ] [MainThread]: os info: macOS-14.7.1-arm64-arm-64bit-Mach-O
+[0m14:58:22.434328 [info ] [MainThread]: Using profiles dir at /Users/jandytenedora/.dbt
+[0m14:58:22.434667 [info ] [MainThread]: Using profiles.yml file at /Users/jandytenedora/.dbt/profiles.yml
+[0m14:58:22.434862 [info ] [MainThread]: Using dbt_project.yml file at /Users/jandytenedora/Interview/python-interview-gpt-question/dbt/ecommerce_dbt/dbt_project.yml
+[0m14:58:22.435030 [info ] [MainThread]: adapter type: bigquery
+[0m14:58:22.435190 [info ] [MainThread]: adapter version: 1.9.1
+[0m14:58:22.486366 [info ] [MainThread]: Configuration:
+[0m14:58:22.486701 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m14:58:22.486872 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m14:58:22.487030 [info ] [MainThread]: Required dependencies:
+[0m14:58:22.487253 [debug] [MainThread]: Executing "git --help"
+[0m14:58:22.508125 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m14:58:22.508815 [debug] [MainThread]: STDERR: "b''"
+[0m14:58:22.509056 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m14:58:22.509255 [info ] [MainThread]: Connection:
+[0m14:58:22.509468 [info ] [MainThread]:   method: oauth
+[0m14:58:22.509625 [info ] [MainThread]:   database: terraform-tutorial-430708
+[0m14:58:22.509783 [info ] [MainThread]:   execution_project: terraform-tutorial-430708
+[0m14:58:22.509924 [info ] [MainThread]:   schema: dbt_tutorial
+[0m14:58:22.510062 [info ] [MainThread]:   location: EU
+[0m14:58:22.510199 [info ] [MainThread]:   priority: None
+[0m14:58:22.510338 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m14:58:22.510472 [info ] [MainThread]:   impersonate_service_account: None
+[0m14:58:22.510606 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m14:58:22.510743 [info ] [MainThread]:   job_retries: 1
+[0m14:58:22.510875 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m14:58:22.511032 [info ] [MainThread]:   job_execution_timeout_seconds: None
+[0m14:58:22.511164 [info ] [MainThread]:   timeout_seconds: None
+[0m14:58:22.511297 [info ] [MainThread]:   client_id: None
+[0m14:58:22.511427 [info ] [MainThread]:   token_uri: None
+[0m14:58:22.511560 [info ] [MainThread]:   dataproc_region: None
+[0m14:58:22.511696 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m14:58:22.511832 [info ] [MainThread]:   gcs_bucket: None
+[0m14:58:22.511966 [info ] [MainThread]:   dataproc_batch: None
+[0m14:58:22.512439 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m14:58:22.518079 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m14:58:22.519283 [debug] [MainThread]: On debug: select 1 as id
+[0m14:58:22.519602 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:58:23.623265 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=terraform-tutorial-430708&j=bq:EU:d36d6642-d9d8-4319-831f-684bc7268bf5&page=queryresults
+[0m14:58:23.905930 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m14:58:23.906577 [info ] [MainThread]: [32mAll checks passed![0m
+[0m14:58:23.910545 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 2.014781, "process_user_time": 1.229544, "process_kernel_time": 0.204832, "process_mem_max_rss": "198836224", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m14:58:23.911032 [debug] [MainThread]: Command `dbt debug` succeeded at 14:58:23.910927 after 2.02 seconds
+[0m14:58:23.911374 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m14:58:23.911707 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e1f7490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e26dc70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e28c6b0>]}
+[0m14:58:23.912078 [debug] [MainThread]: Flushing usage events
+[0m14:14:26.644786 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106f80c20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10888bd90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10888bed0>]}
+
+
+============================== 14:14:26.648569 | 35a3d8a8-e061-494b-ae91-929f0560d1b4 ==============================
+[0m14:14:26.648569 [info ] [MainThread]: Running with dbt=1.8.8
+[0m14:14:26.648960 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/jandytenedora/.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/Users/jandytenedora/Interview/python-interview-gpt-question/dbt/ecommerce_dbt/logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt debug', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m14:14:26.661464 [info ] [MainThread]: dbt version: 1.8.8
+[0m14:14:26.661861 [info ] [MainThread]: python version: 3.13.1
+[0m14:14:26.662076 [info ] [MainThread]: python path: /Users/jandytenedora/Interview/python-interview-gpt-question/gpt_question/bin/python3.13
+[0m14:14:26.662237 [info ] [MainThread]: os info: macOS-14.7.1-arm64-arm-64bit-Mach-O
+[0m14:14:27.478388 [info ] [MainThread]: Using profiles dir at /Users/jandytenedora/.dbt
+[0m14:14:27.478731 [info ] [MainThread]: Using profiles.yml file at /Users/jandytenedora/.dbt/profiles.yml
+[0m14:14:27.478917 [info ] [MainThread]: Using dbt_project.yml file at /Users/jandytenedora/Interview/python-interview-gpt-question/dbt/ecommerce_dbt/dbt_project.yml
+[0m14:14:27.479098 [info ] [MainThread]: adapter type: bigquery
+[0m14:14:27.479250 [info ] [MainThread]: adapter version: 1.9.1
+[0m14:14:27.529461 [info ] [MainThread]: Configuration:
+[0m14:14:27.529933 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m14:14:27.530204 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m14:14:27.530375 [info ] [MainThread]: Required dependencies:
+[0m14:14:27.530633 [debug] [MainThread]: Executing "git --help"
+[0m14:14:27.558966 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m14:14:27.559704 [debug] [MainThread]: STDERR: "b''"
+[0m14:14:27.559937 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m14:14:27.560144 [info ] [MainThread]: Connection:
+[0m14:14:27.560405 [info ] [MainThread]:   method: oauth
+[0m14:14:27.560558 [info ] [MainThread]:   database: terraform-tutorial-430708
+[0m14:14:27.560706 [info ] [MainThread]:   execution_project: terraform-tutorial-430708
+[0m14:14:27.560847 [info ] [MainThread]:   schema: ecommerce_data_raw
+[0m14:14:27.560982 [info ] [MainThread]:   location: EU
+[0m14:14:27.561117 [info ] [MainThread]:   priority: None
+[0m14:14:27.561252 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m14:14:27.561390 [info ] [MainThread]:   impersonate_service_account: None
+[0m14:14:27.561522 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m14:14:27.561667 [info ] [MainThread]:   job_retries: 1
+[0m14:14:27.561799 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m14:14:27.561935 [info ] [MainThread]:   job_execution_timeout_seconds: None
+[0m14:14:27.562063 [info ] [MainThread]:   timeout_seconds: None
+[0m14:14:27.562197 [info ] [MainThread]:   client_id: None
+[0m14:14:27.562324 [info ] [MainThread]:   token_uri: None
+[0m14:14:27.562455 [info ] [MainThread]:   dataproc_region: None
+[0m14:14:27.562582 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m14:14:27.562712 [info ] [MainThread]:   gcs_bucket: None
+[0m14:14:27.562838 [info ] [MainThread]:   dataproc_batch: None
+[0m14:14:27.563227 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m14:14:27.571480 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m14:14:27.572432 [debug] [MainThread]: On debug: select 1 as id
+[0m14:14:27.572721 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:14:30.408364 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=terraform-tutorial-430708&j=bq:EU:301c00c5-a6d7-4418-9d8d-34204168fc0e&page=queryresults
+[0m14:14:30.908870 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m14:14:30.909909 [info ] [MainThread]: [32mAll checks passed![0m
+[0m14:14:30.915170 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 4.314581, "process_user_time": 1.286472, "process_kernel_time": 0.304595, "process_mem_max_rss": "199262208", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m14:14:30.915840 [debug] [MainThread]: Command `dbt debug` succeeded at 14:14:30.915684 after 4.32 seconds
+[0m14:14:30.916340 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m14:14:30.916788 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e8db490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e96e210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e9746b0>]}
+[0m14:14:30.917297 [debug] [MainThread]: Flushing usage events

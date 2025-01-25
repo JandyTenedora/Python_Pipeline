@@ -1,0 +1,7 @@
+version: 1
+
+sources:
+  - name: raw_data
+    tables:
+      - name: sales
+      - name: customer_logs
