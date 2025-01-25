@@ -3,5 +3,6 @@ version: 1
 sources:
   - name: raw_data
     tables:
-      - name: sales
+      - name: raw_sales_data
       - name: customer_logs
+      - name: product_catalog

@@ -815,3 +815,23 @@ where id is null
 [0m14:14:30.916340 [debug] [MainThread]: Connection 'debug' was properly closed.
 [0m14:14:30.916788 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e8db490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e96e210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e9746b0>]}
 [0m14:14:30.917297 [debug] [MainThread]: Flushing usage events
+[0m17:37:46.380723 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104fc8c20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107023d90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107023ed0>]}
+
+
+============================== 17:37:46.384290 | cbf9468e-0e2b-4c00-95bd-21dc89656a20 ==============================
+[0m17:37:46.384290 [info ] [MainThread]: Running with dbt=1.8.8
+[0m17:37:46.384675 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': '/Users/jandytenedora/Interview/python-interview-gpt-question/dbt/ecommerce_dbt/logs', 'fail_fast': 'False', 'profiles_dir': '/Users/jandytenedora/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt test', 'send_anonymous_usage_stats': 'True'}
+[0m17:37:47.247374 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'cbf9468e-0e2b-4c00-95bd-21dc89656a20', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11e9b95b0>]}
+[0m17:37:47.279473 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'cbf9468e-0e2b-4c00-95bd-21dc89656a20', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11e87d9d0>]}
+[0m17:37:47.279959 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m17:37:47.295260 [debug] [MainThread]: checksum: ec53e341a936509427e16df1c646386a84befec52c1957e3f4359fbc36fc93f5, vars: {}, profile: , target: , version: 1.8.8
+[0m17:37:47.353746 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m17:37:47.354129 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m17:37:47.354337 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'cbf9468e-0e2b-4c00-95bd-21dc89656a20', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11e84ac50>]}
+[0m17:37:48.002271 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.ecommerce_dbt.dim_product' (models/marts/dim_product.sql) depends on a source named 'raw_data.products' which was not found
+[0m17:37:48.004821 [debug] [MainThread]: Resource report: {"command_name": "test", "command_wall_clock_time": 1.6707933, "process_user_time": 1.958794, "process_kernel_time": 0.28517, "process_mem_max_rss": "202670080", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m17:37:48.005169 [debug] [MainThread]: Command `dbt test` failed at 17:37:48.005093 after 1.67 seconds
+[0m17:37:48.005456 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11eba1a90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11eba17c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106f37e70>]}
+[0m17:37:48.005681 [debug] [MainThread]: Flushing usage events
