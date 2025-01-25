@@ -8,3 +8,6 @@ terraform.tfstate.backup
 
 # pycache
 *__pycache__/
+
+# dbt
+/dbt/logs/dbt.log
