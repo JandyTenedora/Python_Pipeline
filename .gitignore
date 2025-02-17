@@ -1,4 +1,14 @@
-*.idea/
+.idea/
+target/
 
-python-log-processing/app/log_processing/input
-python-log-processing/app/log_processing/output
+
+# terraform
+terraform.tfstate
+terraform.tfstate.backup
+
+# pycache
+*__pycache__/
+
+# dbt
+/dbt/logs/dbt.log
+/infra/terraform/.terraform/
