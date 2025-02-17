@@ -1,157 +1,82 @@
-# README: Expanded 3-Hour Python + dbt + Terraform + NoSQL Exercise
+# E-commerce Data Pipeline Project
 
-## Objective
-Design and implement an end-to-end data pipeline that processes raw e-commerce data from multiple sources, transforms and validates the data, and stores it in a cloud-based reporting system. The assessment will test:
+## Overview
 
-1. Python programming skills, including regex, JSON parsing, and log processing.
-2. Proficiency in dbt for data modeling and transformation.
-3. Ability to work with NoSQL data sources.
-4. Data modeling and normalization expertise.
-5. Infrastructure setup using Terraform.
+This project is an end-to-end data pipeline designed to process raw e-commerce data from multiple sources, transform and validate the data, and store it in a cloud-based reporting system. The pipeline leverages Python for data ingestion and processing, dbt for data transformation and modeling, and Terraform for infrastructure setup.
 
----
+## Project Structure
 
-## Assessment Breakdown
+- **app**: Contains the main application code for data ingestion and log processing.
+  - **log_processor**: Handles log processing tasks.
+    - `log_processor.py`: Main script for processing event logs.
+  - **data_ingestion**: Handles data ingestion tasks.
+    - `data_ingestor.py`: Abstract base class for data ingestion.
+- **infra**: Contains Terraform scripts for infrastructure setup.
+  - `main.tf`: Main Terraform configuration file.
+- **README.md**: Project documentation.
 
-### Total Time: 3 Hours
+## Components
 
-- **Part 1 (45 minutes):** Data ingestion and regex/JSON processing.
-- **Part 2 (45 minutes):** Log processing and integration with a NoSQL source.
-- **Part 3 (1 hour):** Data transformation and modeling using dbt.
-- **Part 4 (30 minutes):** Infrastructure setup with Terraform.
-- **Bonus Task (Optional):** Advanced validation and monitoring.
+### Data Ingestion
 
----
+- **DataIngestor**: An abstract base class for ingesting data from various sources. It includes methods for parsing and validating data, logging progress, and ingesting data into the destination.
 
-## Project Scenario
+### Log Processing
 
-You are tasked with building a pipeline for an e-commerce company that collects sales and customer interaction data from multiple sources:
+- **LogProcessor**: A class for processing event logs. It reads log files, applies processing functions, and extracts insights such as the number of events per user and the most common event types.
 
-1. A **CSV file** containing sales transactions.
-2. A **JSON-based API** providing customer behavior logs.
-3. A **NoSQL database** storing product catalog information (e.g., MongoDB).
+### Infrastructure Setup
 
-The goal is to:
-1. Normalize and clean the data from all sources.
-2. Aggregate key metrics like daily revenue per product, customer activity patterns, and product popularity.
-3. Store the cleaned and transformed data in a **BigQuery reporting table** for analysis.
+- **Terraform**: Used to provision cloud infrastructure, including BigQuery datasets and tables, and Firestore databases.
 
----
+## Setup Instructions
 
-## Part 1: Data Ingestion and Regex/JSON Parsing (45 minutes)
+### Prerequisites
 
-### Tasks
+- Python 3.x
+- pip
+- Terraform
+- Google Cloud SDK (for BigQuery and Firestore)
 
-1. Write a Python script to:
-   - Read raw sales data from a CSV file.
-   - Parse a JSON file (or API response) containing customer activity logs. Each log entry includes:
-     - `timestamp`
-     - `user_id`
-     - `event_type` (e.g., "click", "purchase", "view")
-     - `metadata` (a JSON object with nested details).
-   - Extract fields like `timestamp` and `user_id` using **regex** from improperly formatted logs.
-   - Normalize the JSON `metadata` field into flat columns.
+### Installation
 
-2. Clean and validate the data:
-   - Handle missing or malformed fields.
-   - Write the cleaned data to a **staging table** in BigQuery.
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/JandyTenedora/ecommerce-data-pipeline.git
+   cd ecommerce-data-pipeline
+   ```
+2. Install Python dependencies:
+   ```sh
+   pip install -r requirements.txt
+   ```
 
----
+3. Initialize and apply Terraform configuration: 
+   ```sh
+   cd infra
+   terraform init
+   terraform apply   
+   ```
 
-## Part 2: Log Processing and NoSQL Integration (45 minutes)
+### Running the Pipeline
 
-### Tasks
+1. Navigate to the `app` directory:
+   ```sh
+   cd app
+   ```
+   
+2. Navigate to the `app` directory:
+   ```sh
+   python log_processor/log_processor.py
+   ```
 
-1. Simulate a log processing pipeline:
-   - Parse a sample log file containing JSON lines.
-   - Extract meaningful insights such as:
-     - Number of events per user.
-     - Most common `event_type`.
+### Usage
+#### Log Processor
+The log processor reads a JSON log file, processes the logs, and extracts insights. The main script is log_processor.py, which can be executed as follows:
+   ```sh
+   python log_processor/log_processor.py
+   ```
+#### Data Ingestor
+The data ingestor is an abstract base class that can be extended to ingest data from various sources. Implement the parse_data and validate_data methods to create a custom ingestor. 
 
-2. Integrate a NoSQL source (e.g., MongoDB or DynamoDB):
-   - Connect to a MongoDB instance containing product catalog data.
-   - Extract product details like `product_id`, `product_name`, and `category`.
-   - Save the extracted data to another BigQuery **staging table** for further processing.
-
----
-
-## Part 3: Data Transformation and Modeling (dbt) (1 Hour)
-
-### Tasks
-
-1. Use dbt to build models that:
-   - Join sales data (from the CSV) with product data (from MongoDB) and customer logs (from JSON).
-   - Calculate:
-     - Daily revenue per product.
-     - Top products by category.
-     - Customer activity metrics (e.g., most active users, most frequent event types).
-   - Write the transformed data to a **reporting table** in BigQuery.
-
-2. Implement dbt schema tests to:
-   - Validate that `product_id` and `user_id` are not null and unique where applicable.
-   - Ensure that revenue calculations are consistent.
-
-3. Normalize the data:
-   - Design the schema for the reporting table to follow best practices in **data modeling and normalization** (e.g., splitting denormalized data into dimension and fact tables).
-
----
-
-## Part 4: Infrastructure Setup with Terraform (30 minutes)
-
-### Tasks
-
-1. Write Terraform scripts to:
-   - Create a BigQuery dataset (`ecommerce_data`).
-   - Create tables:
-     - `raw_sales_data`
-     - `customer_logs`
-     - `product_catalog`
-     - `reporting_metrics`
-   - Include IAM roles to ensure proper permissions for dbt and Python scripts.
-
-2. Parameterize the Terraform scripts for reusability:
-   - Allow different dataset names or regions to be passed as variables.
-
----
-
-## Bonus Task: Advanced Validation and Monitoring (Optional)
-
-### Tasks
-
-1. Build a Python-based monitoring script to:
-   - Compare row counts and metrics between raw and transformed data.
-   - Detect anomalies in metrics (e.g., unusually high/low revenue).
-   - Send alerts (e.g., via email or Slack) if discrepancies are found.
-
-2. Extend Terraform to provision a **Cloud Storage bucket**:
-   - Store raw CSV files and logs before ingestion into BigQuery.
-
----
-
-## Deliverables
-
-1. **Python Scripts**:
-   - A script for data ingestion, regex/JSON parsing, and log processing.
-   - A script for validation and monitoring.
-
-2. **dbt Project**:
-   - Models for staging, transformation, and reporting.
-   - Schema tests for data quality.
-
-3. **Terraform Scripts**:
-   - Scripts to provision BigQuery datasets and tables, with reusable variables.
-
-4. **Documentation**:
-   - A README file explaining how to run the pipeline and the purpose of each component.
-
----
-
-## What the Interviewer is Assessing
-
-1. **Regex and JSON Parsing**: Ability to extract meaningful data from raw or messy inputs.
-2. **Log Processing**: Competence in handling semi-structured data and generating insights.
-3. **NoSQL Knowledge**: Understanding of how to integrate and process data from NoSQL databases.
-4. **Data Transformation**: Skill in modeling and normalizing data using dbt.
-5. **Terraform and Cloud Knowledge**: Proficiency in automating cloud infrastructure setup.
-6. **Attention to Detail**: Accuracy in data validation and pipeline implementation.
-
+### Infrastructure 
+The infrastructure is managed using Terraform. The main configuration file is main.tf, which provisions BigQuery datasets and tables, and Firestore databases.
